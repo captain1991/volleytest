@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gv_item_bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/licai_item_top_right_iv_size"
+        android:layout_height="@dimen/licai_item_top_right_iv_size"
+        android:background="@drawable/xinshou"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter" />
+
+    <!--
+    大小比例：
+    7          6.5
+    6          6
+    17.5       7
+    -->
+
+    <LinearLayout
+        android:id="@+id/panel_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_left_title"
+            android:text="新手专享A120011"
+            style="@style/licai_item_text1_style" />
+
+        <TextView
+            android:text="预期年化"
+            android:id="@+id/tv_yqnh"
+            android:layout_marginTop="10dp"
+            style="@style/licai_item_text2_style" />
+
+        <TextView
+            android:text="15.00%"
+            android:id="@+id/tv_percent"
+            android:layout_marginTop="5dp"
+            style="@style/licai_item_text3_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/licai_item_part2_left_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/panel_left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_qtje"
+            android:text="100元起投"
+            android:gravity="top|left"
+            style="@style/licai_item_text4_style" />
+
+        <TextView
+            android:id="@+id/tv_rzje"
+            android:text="融资金额200,0000元"
+            android:layout_marginTop="10dp"
+            style="@style/licai_item_text2_style" />
+
+        <TextView
+            android:id="@+id/tv_qx"
+            android:text="期限 3个月"
+            android:layout_marginTop="5dp"
+            style="@style/licai_item_text2_style" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/iv_clock_size"
+                android:layout_height="@dimen/iv_clock_size"
+                android:scaleType="fitCenter"
+                android:background="@drawable/clock" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:text="0天24小时15分5秒"
+                android:layout_marginLeft="5dp"
+                style="@style/licai_item_text2_style" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
